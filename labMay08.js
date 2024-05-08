@@ -2,15 +2,15 @@ const startnumber = 1;
 
 let currentNumber = startnumber;
 
-const endnumber = 100;
+const endnumber = 5;
 
-let timeToStop = false;
+let continueCounting = true;
 
 let sum = 0;
 
-for ( ; timeToStop ; ){
+for ( ; continueCounting ; ){
     sum += currentNumber++;
-    if (currentNumber > endnumber){ timeToStop = true; }
+    if (currentNumber > endnumber){ continueCounting = false; }
 }   
 console.log(" sum is ", sum);
 
